@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "SegoeUI";
+  src: url(../fonts/SegoeUI.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SegoeUI";
+  src: url(../fonts/SegoeUIBold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "SegoeUI", sans-serif;
+  background-color: #F4F1EA;
+}
+
+.auth-form {
+  max-width: 620px;
+  width: 100%;
+  padding: 40px 40px 39px;
+  margin: 20px;
+  border-radius: 32px;
+  background-color: #FFFDF9;
+}
+
+.auth-title {
+  margin: 0 0 16px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #232323;
+}
+
+.auth-descr {
+  max-width: 448px;
+  margin: 0 0 39px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: rgba(111, 106, 100, 0.92);
+}
+
+.form-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.form-label {
+  width: calc(50% - 8px);
+}
+
+.form-label.form-label__full {
+  width: 100%;
+}
+
+.form-caption {
+  display: block;
+  margin: 0 0 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #4A4641;
+}
+
+.form-input {
+  height: 54px;
+  width: 100%;
+  padding: 16px 16px 13px 15px;
+  border-radius: 16px;
+  border: 1px solid #E7E1D8;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: #232323;
+  background-color: #FAF8F4;
+}
+
+.form-input::placeholder {
+  color: #5e5e5e;
+}
+
+.form-accept {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form-accept:hover {
+  opacity: .8;
+}
+
+.form-accept input {
+  position: absolute;
+  opacity: 0;
+  appearance: none;
+}
+
+.form-accept__checkbox {
+  position: relative;
+  display: block;
+  height: 16px;
+  width: 16px;
+  min-width: 16px;
+  border-radius: 4px;
+  border: 1px solid #4A4641;
+}
+
+.form-accept__checkbox::before {
+  content: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 8px;
+  width: 8px;
+  border-radius: 1px;
+  background-color: #4A4641;
+}
+
+.form-accept__label {
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #4A4641;
+}
+
+.form-accept input:checked + .form-accept__checkbox::before {
+  content: '';
+}
+
+.form-create {
+  height: 58px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  background-color: #232323;
+  transition: .3s;
+}
+
+.form-create:hover {
+  background-color: #676767;
+}
+
+.form-create:active {
+  background-color: #999999;
+}

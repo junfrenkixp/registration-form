@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration form</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <form class="auth-form" action="https://postman-echo.com/post" method="POST">
+    <h1 class="auth-title">Создайте профиль в Bloom</h1>
+    <div class="auth-descr">Сохраните любимые букеты, отслеживайте заказы и получайте персональные предложения.</div>
+    <div class="form-list">
+      <label class="form-label">
+        <span class="form-caption">Имя</span>
+        <input class="form-input" name="name" type="text" placeholder="Name" required>
+      </label>
+      <label class="form-label">
+        <span class="form-caption">Фамилия</span>
+        <input class="form-input" name="lastname" type="text" placeholder="Lastname" required>
+      </label>
+      <label class="form-label form-label__full">
+        <span class="form-caption">E-mail</span>
+        <input class="form-input" name="email" type="email" placeholder="Email" required>
+      </label>
+      <label class="form-label">
+        <span class="form-caption">Пароль</span>
+        <input class="form-input" name="password" type="password" placeholder="Password" required>
+      </label>
+      <label class="form-label">
+        <span class="form-caption">Повторите пароль</span>
+        <input class="form-input" name="password-confirm" type="password" placeholder="Repeat password" required>
+      </label>
+    </div>
+      <label class="form-accept">
+        <input type="checkbox" name="accept">
+        <span class="form-accept__checkbox"></span>
+        <span class="form-accept__label">Я принимаю условия использования сервиса и политику обработки персональных данных.</span>
+      </label>
+    <button class="form-create" type="submit">Создать аккаунт</button>
+  </form>
+</body>
+</html>
